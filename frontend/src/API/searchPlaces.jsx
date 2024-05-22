@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const searchPlaces = async (searchTerm) => {
   try {
-    const response = await axios.get('http://localhost:4000/api/getplaces/', {
+    const response = await axios.get('http://localhost:10000/api/getplaces/', {
       params: {
         keyword: searchTerm
       }

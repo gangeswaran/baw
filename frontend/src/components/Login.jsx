@@ -9,7 +9,7 @@ const Login = ({ setIsLoggedIn }) => {
     e.preventDefault();
     try {
       // Make POST request to login endpoint
-      const response = await axios.post('http://localhost:4000/api/login/', {
+      const response = await axios.post('http://localhost:10000/api/login/', {
         email,
         password
       });
