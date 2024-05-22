@@ -7,7 +7,7 @@ const userRouter = require('./router/users_router');
 const PaymentRouter = require('./router/payment');
 const ProfileRouter = require('./router/profile');
 require('dotenv').config();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 
 app.use(express.json());
 app.use(cors());
