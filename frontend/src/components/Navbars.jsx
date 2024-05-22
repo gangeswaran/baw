@@ -52,7 +52,7 @@ function Navbars({ setSearchTerm, isLoggedIn }) {
             <Button variant="outline-success">Search</Button>
           </Form>
           <Nav>
-            <Nav.Link href={`/login`}>
+            <Nav.Link href={"/login"}>
               {isLoggedIn ? <img width={"50px"} src={img} alt=""/> : "Login"}
             </Nav.Link>
             <Nav.Link href={`/signup`}>
