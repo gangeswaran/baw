@@ -19,7 +19,7 @@ const Payment = () => {
         e.preventDefault();
 
         try {
-            await axios.post('http://localhost:10000/api/payment/', formData);
+            await axios.post('https://baw1.onrender.com/api/payment/', formData);
 
             alert('Payment submitted successfully');
 
