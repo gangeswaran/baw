@@ -11,10 +11,10 @@ const PORT = process.env.PORT || 10000;
 
 app.use(express.json());
 app.use(cors());
-app.use("/api", userRouter);
-app.use("/api", PlacesRouter);
-app.use("/api",PaymentRouter);
-app.use("/api", ProfileRouter);
+app.use("/", userRouter);
+app.use("/", PlacesRouter);
+app.use("/",PaymentRouter);
+app.use("/", ProfileRouter);
 
 mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
