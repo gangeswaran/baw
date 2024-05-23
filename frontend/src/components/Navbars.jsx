@@ -1,5 +1,5 @@
 // import React, { useState, useEffect } from "react";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
@@ -32,16 +32,7 @@ function Navbars({ setSearchTerm, isLoggedIn }) {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
         <Navbar.Brand href="#">BOOK ANYWHERE</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
-            navbarScroll
-          >
-            <Nav.Link href="#action1">Home</Nav.Link>
-          </Nav>
-          <Form className="d-flex">
+        <Form className="d-flex">
             <Form.Control
               type="search"
               placeholder="Search"
@@ -49,9 +40,18 @@ function Navbars({ setSearchTerm, isLoggedIn }) {
               aria-label="Search"
               onChange={handleSearch}
             />
-            <Button variant="outline-success">Search</Button>
           </Form>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: "100px" }}
+            navbarScroll
+          >
+          </Nav>
           <Nav>
+          <Nav.Link href="/">Home</Nav.Link>
+
             <Nav.Link href={"/login"}>
               {isLoggedIn ? <img width={"50px"} src={img} alt=""/> : "Login"}
             </Nav.Link>
